@@ -21,7 +21,7 @@ class SplashScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     Timer(
         const Duration(seconds: 2),
-        () => Navigator.push(
+        () => Navigator.pushReplacement(
             context, MaterialPageRoute(builder: (context) => HomeScreen())));
 
     return Scaffold(
@@ -33,8 +33,8 @@ class SplashScreen extends StatelessWidget {
               begin: Alignment.topRight,
               end: Alignment.bottomLeft,
               colors: [
-                Color.fromARGB(255, 229, 172, 118),
-                Color.fromARGB(255, 173, 100, 100),
+                Color.fromARGB(255, 165, 213, 227),
+                Color.fromARGB(255, 169, 176, 193),
               ]),
         ),
         child: Column(
